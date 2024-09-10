@@ -1,0 +1,33 @@
+/* NavDash.css */
+.sb-topnav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .sb-topnav .navbar-brand {
+    color: white;
+  }
+  
+  .sb-topnav .btn {
+    color: white;
+  }
+  
+  .sb-topnav .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+  
+  .sb-topnav .navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .sb-topnav .navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+  }
+  
+  .sb-topnav .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #495057;
+  }
+  

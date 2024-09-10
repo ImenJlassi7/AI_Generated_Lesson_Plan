@@ -1,0 +1,55 @@
+/* UserMessages.css */
+
+.user-messages-container {
+  background-color: #ffffff; /* Light background for better contrast */
+  border-radius: 5px; /* Rounded corners */
+  padding: 50px;
+  margin-right: 50px;
+}
+
+.table {
+  margin-top: 20px; /* Space above the table */
+}
+
+.table thead th {
+  background-color: #343a40; /* Dark header */
+  color: white; /* White text in header */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Light grey hover effect */
+}
+
+.table th, .table td {
+  text-align: center; /* Center-align text in table headers and cells */
+  vertical-align: middle; /* Vertically center text */
+}
+
+.custom-btn {
+  padding: 0.4rem 0.8rem; /* Custom padding for buttons */
+  font-size: 0.875rem; /* Font size for buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background-color transition */
+}
+
+.custom-btn-primary {
+  background-color: #007bff; /* Primary button background color */
+  color: white; 
+  margin-right: 20px;/* Primary button text color */
+}
+
+.custom-btn-primary:hover {
+  background-color: #0056b3; /* Primary button hover background color */
+}
+
+.custom-btn-danger {
+  background-color: #dc3545; /* Danger button background color */
+  color: white; 
+  margin-left: 20px;/* Danger button text color */
+}
+
+.custom-btn-danger:hover {
+  background-color: #c82333; /* Danger button hover background color */
+}

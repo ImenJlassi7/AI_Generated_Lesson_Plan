@@ -1,0 +1,81 @@
+.historyPage {
+  padding-top: 70px; /* Adjust based on the height of your Navbar */
+  padding-bottom: 70px; /* Adjust based on the height of your Footer */
+  background-color: #ffffff; /* Light gray background */
+  min-height: 100vh; /* Ensure the container takes at least the viewport height */
+  overflow: hidden; /* Prevents the entire page from scrolling if the content is too large */
+}
+
+.historyHeader {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px; /* Larger font size for header */
+  font-weight: bold; /* Bold font weight for header */
+}
+
+/* New class for scrollable table container */
+.scrollableTableContainer {
+  max-height: 400px; /* Set the max height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.lessonPlansTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.lessonPlansTable th,
+.lessonPlansTable td {
+  border: 1px solid #ddd;
+  padding: 15px; /* Increased padding for better readability */
+  text-align: center; /* Center align text in table cells */
+}
+
+.lessonPlansTable th {
+  background-color: #f2f2f2; /* Light gray background for table headers */
+  font-weight: bold; /* Bold font weight for table headers */
+}
+
+.actionBtn {
+  padding: 10px 20px; /* Increased padding for buttons */
+  margin: 5px; /* Increased margin between buttons */
+  cursor: pointer;
+  border: none; /* Remove border from buttons */
+  border-radius: 5px; /* Add a subtle border radius to buttons */
+  font-size: 16px; /* Larger font size for buttons */
+}
+
+.downloadBtn {
+  background-color: #4CAF50; /* Green background for download button */
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #f44336; /* Red background for delete button */
+  color: white;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  font-size: 18px; /* Larger font size for error message */
+  margin: 20px 0; /* Increased margin for error message */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto; /* Center the spinner */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,119 @@
+/* Container for feedback list */
+.feedback-container {
+  margin-left: 270px; /* Adjust margin to make space for sidebar */
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.feedback-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Feedback list styles */
+.feedback-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feedback-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-rating-container {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack the icon and rating vertically */
+  align-items: flex-end; /* Align items to the end (right) */
+  margin-left: 10px; /* Add some space to the left of the container */
+}
+
+.feedback-rating {
+  margin-top: 5px; /* Space between trash icon and rating */
+}
+
+.feedback-rating .filled-star {
+  color: gold;
+}
+
+.feedback-rating .empty-star {
+  color: #ccc;
+}
+
+.feedback-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Loading and error styles */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #333;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Trash icon style */
+.trash {
+  color: red; /* Set the color to red */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 30px; /* Adjust size as needed */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for smooth animation */
+}
+
+/* FeedbackAdmin.css */
+
+/* Add hover effect for the trash icon */
+
+/* Scale the icon and change color on hover */
+.trash:hover {
+  transform: scale(1.2); /* Increase the size of the icon */
+  color: #ff0000; /* Change the color on hover (red in this case) */
+}
+
+
+/* Adjust feedback item hover effect */
+.feedback-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover for better interaction */
+  transition: box-shadow 0.2s; /* Smooth transition for the shadow effect */
+}

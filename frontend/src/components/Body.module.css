@@ -1,0 +1,135 @@
+.lessonPlansBot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 90vh; /* Ensure the bot container takes the full viewport height */
+  overflow-y: hidden; /* Enable scrolling */
+}
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animatedGreeting {
+  animation: fadeInScaleUp 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 50px; /* Reduced padding for better spacing */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.formContainer {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Reduced max-width for the form container */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 40px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.generateBtn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generateBtn:disabled {
+  background-color: #9e9e9e;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+}
+
+.botContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botGif {
+  max-width: 100%;
+  height: auto;
+  padding-left: 150px;
+  padding-right: 50px;
+}
+
+.lessonPlanContainer {
+  flex: 4; /* Increased flex value for the lesson plan container */
+  padding: 20px;
+  margin-left: 200px; /* Added margin to the left for spacing */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Set a max-width for the lesson plan container */
+  max-height: 500px; /* Set a max-height to control the scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.lessonPlan {
+  display: flex;
+  flex-direction: column;
+}
+
+.lessonSection {
+  margin-top: 30px;
+}
+
+.lessonSection h3 {
+  margin-bottom: 10px;
+}
+
+.lessonSection p {
+  margin-left: 20px;
+  white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+
+.downloadBtn {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}

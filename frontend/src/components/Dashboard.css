@@ -1,0 +1,70 @@
+
+.dashboard-container {
+  padding: 20px;
+  margin-left: 250px; /* Shift content to the right to make space for the sidebar */
+}
+
+.dashboard-title {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.stat-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  height: calc(100% - 56px); /* Adjust height to fill below the navbar */
+  position: fixed;
+  top: 56px; /* Position directly below the navbar */
+  left: -250px; /* Hide by default */
+  background-color: #343a40; /* Dark background */
+  transition: left 0.3s ease; /* Smooth transition */
+  z-index: 99; /* Ensure it's below the navbar */
+}
+
+.sidebar.open {
+  left: 0; /* Show when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block; /* Ensure the entire area is clickable */
+}
+
+.sidebar ul li:hover {
+  background-color: #495057; /* Add hover effect for better UX */
+}

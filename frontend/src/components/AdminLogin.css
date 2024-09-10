@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #82e0ff 50%, #a27dc9 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.admin-login-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full height */
+}
+
+.admin-login-content {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Space between form and image */
+  width: 80%; /* Adjust width as needed */
+  max-width: 1000px;
+}
+
+.admin-login-form {
+  text-align: center;
+  width: 50%; /* Adjust width as needed */
+  max-width: 400px;
+  margin-left: 210px;/* Add margin for spacing */
+}
+
+.admin-login-input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.admin-login-button {
+  padding: 15px 30px; /* Increase padding for a bigger button */
+  margin: 15px 0; /* Increase margin for more spacing */
+  border: none;
+  border-radius: 5px;
+  background-color: #1da867;
+  color: white;
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.admin-login-button:hover {
+  background-color: transparent; /* Make the button background transparent */
+  color: #000000; /* Change text color for better visibility */
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.7; /* Apply transparency */
+}
+
+.admin-login-error {
+  color: #ff4d4d;
+}
+
+.admin-login-image {
+  flex: 1; /* Allow the image section to take remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style and animate the Admin Login label */
+.admin_label {
+  font-size: 40px; /* Size of the label text */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: initial;
+  color: #000000; /* Dark color */
+  text-align: center; /* Center align the text */
+  display: block; /* Make the label a block element */
+  margin-bottom: 20px; /* Space below the label */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out; /* Add animations */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Move-up animation */
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}

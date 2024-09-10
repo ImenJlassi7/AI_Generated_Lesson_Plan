@@ -1,0 +1,71 @@
+/* FetchFeedback.module.css */
+.feedbackPageWrapper {
+  padding: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.feedbackPage {
+  padding: 50px;
+}
+
+.feedbackList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: auto; /* Make the container scrollable */
+  max-height: 80vh; /* Limit the height for scrollable area */
+  padding: 10px; /* Optional padding */
+}
+
+.feedbackCard {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  color: #000000;
+  text-align: left;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Animation effect */
+}
+
+.feedbackCard:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.feedbackCard h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.feedbackCard p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.rating i {
+  font-size: 24px;
+  color: #FFD700;
+}
+
+/* Spinner styles */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

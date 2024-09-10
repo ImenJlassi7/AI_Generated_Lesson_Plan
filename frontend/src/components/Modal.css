@@ -1,0 +1,109 @@
+/* components/Modal.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+
+/* Global styles */
+body {
+    font-family: 'Open Sans';
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.modal-popup-wrap {
+    width: 100%;
+    height: 100%;
+    display: none; /* Hide by default */
+    position: fixed; /* Change to fixed */
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000; /* Ensure it's above other content */
+    justify-content: center; /* Center the modal horizontally */
+    align-items: center; /* Center the modal vertically */
+}
+
+.modal-popup-wrap.show {
+    display: flex; /* Use flexbox for centering */
+}
+
+.modal-popup-box {
+    width: 400px;
+    padding: 40px; /* Reduced padding for a more compact look */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* More rounded corners */
+    background: #fff;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.modal-popup-box.transform-in {
+    transform: scale(1); /* Scale to normal size */
+}
+
+.modal-popup-box.transform-out {
+    transform: scale(0.5); /* Scale down */
+}
+
+.modal-popup-h2 {
+    color: #333; /* Darker text for better readability */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.modal-popup-h3 {
+    color: #666; /* Slightly lighter color for secondary text */
+    margin-bottom: 20px; /* Space below the message */
+}
+
+.modal-close-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all ease 0.3s;
+    border-radius: 50%; /* Rounded button */
+    background: #d75f70;
+    font-weight: bold;
+    color: #fff;
+    border: none; /* Remove border for button */
+    cursor: pointer; /* Change cursor to pointer */
+    line-height: 1; /* Align text vertically */
+}
+
+.modal-close-btn:hover {
+    background: #c75a70; /* Darker background on hover */
+}
+
+.modal-footer {
+    margin-top: 20px; /* Add space between content and buttons */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between buttons */
+}
+
+.modal-confirm-button,
+.modal-cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effect */
+}
+
+.modal-confirm-button {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.modal-confirm-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.modal-cancel-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.modal-cancel-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}

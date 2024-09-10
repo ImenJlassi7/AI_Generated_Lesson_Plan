@@ -1,0 +1,138 @@
+@keyframes navbar-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-custom {
+  color: rgb(0, 0, 0); /* Text color */
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(243, 61, 243) 98%);
+  background-size: 400% 400%;
+  animation: navbar-gradient 15s ease infinite;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .offcanvas-title {
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+
+.navbar-custom .nav-link:hover {
+  background-color: rgba(91, 24, 117, 0.849); /* Darker blue on hover */
+}
+
+.navbar-custom .btn-close {
+  filter: invert(1); /* Make the close button white */
+}
+
+.navbar-custom .offcanvas {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent blue background */
+}
+
+.navbar-custom .navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-ro-img {
+  height: 50px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Space between the image and text */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20; /* Ensure navbar appears above other content */
+}
+
+.navbar-icon-spacing {
+  margin-left: 87px; /* Adjust the value as needed */
+}
+
+.navbar-hand {
+  margin-left: 950px; 
+  font-size: 200%;
+  color: black;
+}
+
+.navbar-icon {
+  margin-left: 112px; /* Adjust the value as needed */
+}
+
+.navbar-feedback {
+  margin-left: 187px; /* Adjust the value as needed */
+}
+
+.navbar-eye {
+  margin-left: 155px; /* Adjust the value as needed */
+}
+
+.navbar-out {
+  margin-left: 240px; /* Adjust the value as needed */
+}
+
+.navbar-msg {
+  margin-left: 206px; /* Adjust the value as needed */
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links-open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
